@@ -10,6 +10,6 @@ if numero > 0:
     while numero > 0:
         soma += numero % 10
         numero = numero // 10
-    print(soma)
+    print("A soma dos numeros é:", soma)
 else:
     print("Numero Invalido!")

@@ -8,10 +8,13 @@ n = int(input("Informe um numero inteiro:"))
 
 
 def logaritimo():
-    if n >= 0:
-        print("O logaritimo de", n, "é:", math.log(n))
-    else:
-        print("Numero Invalido!")
+    try:
+        if n >= 0:
+            print("O logaritimo de", n, "é:", math.log(n))
+        else:
+            print("Numero Invalido!")
+    except ValueError:
+        print("Logaritimo de zero nao existe")
 
 
 logaritimo()

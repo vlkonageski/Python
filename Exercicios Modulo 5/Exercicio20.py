@@ -6,3 +6,23 @@ se é um triangulo escaleno, equilatero ou isoscele, considerando os seguintes c
  º Denomina-se isosceles o triangulo que tem o comprimento de dois lados iguais.
  º Recebe o nome de escaleno o triangulo que tem os tres lados diferentes.
 """
+
+a = float(input("Informe o valor de A:"))
+b = float(input("Informe o valor de B:"))
+c = float(input("Informe o valor de C:"))
+
+
+def triangulos():
+    if a < b + c or b < a + c or c < a + b:
+        print("Pode ser um triangulo")
+        if a == b and a == c and b == c:
+            print("Triangulo Equilatero")
+        elif a == b or a == c or b == c:
+            print("Triangulo Isosceles")
+        else:
+            print("Triangulo Escaleno")
+    else:
+        print("Não pode ser um triangulo")
+
+
+triangulos()

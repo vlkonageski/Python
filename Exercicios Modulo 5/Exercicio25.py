@@ -13,3 +13,4 @@ A variavel A tem que ser diferente de zero. Caso seja igual, imprima a mensagem 
  ºSe delta = 0, existe uma raiz real. Imprima a raiz e a mensagem "Raiz unica".
  ºSe delta >= 0, imprima as duas raizes reais.
 """
+

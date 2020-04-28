@@ -22,6 +22,39 @@ preco_antigo = float(input("Informe o preço antigo:"))
 
 
 def tabela():
-    if preco_antigo < 50:
+    if preco_antigo <= 50:
         aumento = preco_antigo + ( preco_antigo * 0.05)
-        if 
+        print(f"O novo valor é R${aumento}")
+        if aumento <= 80:
+            print("Barato")
+        elif aumento > 80 and aumento <= 120:
+            print("Normal")
+        elif aumento > 120 and aumento <= 200:
+            print("Caro")
+        else:
+            print("Muito Caro")
+    elif preco_antigo > 50 and preco_antigo <= 100:
+        aumento = preco_antigo + ( preco_antigo * 0.10)
+        print(f"O novo valor é R${aumento}")
+        if aumento <= 80:
+            print("Barato")
+        elif aumento > 80 and aumento <= 120:
+            print("Normal")
+        elif aumento > 120 and aumento <= 200:
+            print("Caro")
+        else:
+            print("Muito Caro")
+    else:
+        aumento = preco_antigo + ( preco_antigo * 0.15)
+        print(f"O novo valor é R${aumento}")
+        if aumento <= 80:
+            print("Barato")
+        elif aumento > 80 and aumento <= 120:
+            print("Normal")
+        elif aumento > 120 and aumento <= 200:
+            print("Caro")
+        else:
+            print("Muito Caro")
+
+
+tabela()

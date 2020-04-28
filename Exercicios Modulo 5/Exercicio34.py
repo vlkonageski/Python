@@ -11,3 +11,37 @@ De acordo com a tabela abaixo, quando o aluno tem mais de 20 faltas ocorre uma r
           |0.0 ate 3.9  |       E       |       E          |
           |------------------------------------------------|
 """
+
+nota = float(input("Informe a nota do aluno:"))
+faltas = int(input("Informe a quantidade de faltas do aluno:"))
+
+
+def conceito():
+    if nota >= 9 and nota <= 10:
+        if faltas <= 20:
+            print("Conceito 'A'")
+        else:
+            print("Conceito 'B'")
+    elif nota >= 7.5 and nota <= 8.9:
+        if faltas <= 20:
+            print("Conceito 'B'")
+        else:
+            print("Conceito 'C'")
+    elif nota >= 5 and nota <= 7.4:
+        if faltas <= 20:
+            print("Conceito 'C'")
+        else:
+            print("Conceito 'D'")
+    elif nota >= 4 and nota <= 4.9:
+        if faltas <= 20:
+            print("Conceito 'D'")
+        else:
+            print("Conceito 'E'")
+    elif nota >= 0 and nota <= 3.9:
+        if faltas <= 20:
+            print("Conceito 'E'")
+        else:
+            print("Conceito 'E'")
+
+
+conceito()

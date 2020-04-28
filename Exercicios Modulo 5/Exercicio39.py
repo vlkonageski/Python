@@ -1,20 +1,29 @@
 """
-Uma empresa decide dar um aumento aos seus funcionários de acordo com um tabela que considera o salário atual e o tempo
-de serviço de cada funcionário. Os funcionários com menor salário terão um aumento proporcionalmente maior do que os
-funcionarios com um salário maior, e conforme o tempo de serviço na empresa, cada funcionário irá receber um bonus
-adicional de salário. Faça um programa que leia:
-    º O valor do salario atual do funcionário;
-    º O tempo de serviço desse funcionário na empresa (número de anos de trabalho na empresa).
-Use as tabelas abaixo para calcular o salário reajustado deste funcionário e imprima o valor do salário final reajustado,
-ou uma mensagem caso o funcionário nao tenha direito a nenhum aumento.
-           ___________________________________________________________
-          | SALARIO ATUAL  | REAJUSTE(%)| TEMPO DE SERVIÇO | COMISSAO |
-          |-----------------------------------------------------------|
-          |Até 500,00      |     25%    | Abaixo de 1 ano  |Sem Bonus |
-          |Até 1000,00     |     20%    | De 1 a 3 anos    |  100,00  |
-          |Até 1500,00     |     15%    | De 4 a 6 anos    |  200,00  |
-          |Até 2000,00     |     10%    | De 7 a 10 anos   |  300,00  |
-          |Acima de 2000,00|Sem reajuste| Mais de 10 anos  |  500,00  |
-          |-----------------------------------------------------------|
+O custo ao consumidor de um carro novo é a soma do custo de fábrica, da comissão do distribuidor, e dos impostos.
+A comissão e os impostos são calculados sobre o custo de fábrica, de acordo com a tabela abaixo.
+LEia o custo de fábrica e escreva o custo ao consumidor.
+           ________________________________________________________________
+          |      CUSTO DE FÁBRICA       |% DO DISTRIBUIDOR |% DOS IMPOSTOS|
+          |---------------------------------------------------------------|
+          |até R$12.000,00              |       5          |     isento   |
+          |entre R$12.000,00 e 25.000,00|       10         |       15     |
+          |acima de R$ 25.000,00        |       15         |       20     |
+          |---------------------------------------------------------------|
 """
 
+custo_fabrica = float(input("Informe o custo de fabrica do veiculo:"))
+
+
+def custo_consumidor():
+    if custo_fabrica <= 12000:
+        custo = custo_fabrica + (custo_fabrica * 0.05)
+        print("O custo do veiculo para o consumidor final é R${:.2f}".format(custo))
+    elif custo_fabrica > 12000 and custo_fabrica <= 25000:
+        custo = custo_fabrica + ( custo_fabrica * 0.10) + (custo_fabrica * 0.15)
+        print("O custo do veiculo para o consumidor final é R${:.2f}".format(custo))
+    else:
+        custo = custo_fabrica + ( custo_fabrica * 0.15) + (custo_fabrica * 0.20)
+        print("O custo do veiculo para o consumidor final é R${:.2f}".format(custo))
+
+
+custo_consumidor()

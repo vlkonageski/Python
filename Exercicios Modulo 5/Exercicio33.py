@@ -1,6 +1,6 @@
 """
-Um produto vai sofrer aumento de acordo com a tabela abaixo. Leia o preço antigo, calcule e escreva o preço novo,
-e escreva uma mensagem em função do preço novo ( de acordo com a segunda tabela).
+Um produto vai sofrer aumento de acordo com a tabela abaixo. Leia o preço antigo, calcule e escreva 
+o preço novo, e escreva uma mensagem em função do preço novo ( de acordo com a segunda tabela).
             __________________________________
           |     PREÇO ANTIGO   |% DE AUMENTO  |
           | ----------------------------------|
@@ -18,3 +18,10 @@ e escreva uma mensagem em função do preço novo ( de acordo com a segunda tabe
           |-----------------------------------|
 """
 
+preco_antigo = float(input("Informe o preço antigo:"))
+
+
+def tabela():
+    if preco_antigo < 50:
+        aumento = preco_antigo + ( preco_antigo * 0.05)
+        if 

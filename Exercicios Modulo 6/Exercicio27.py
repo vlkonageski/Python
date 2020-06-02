@@ -4,3 +4,10 @@ Em matematica, o numero harmonico designado por H(n) define-se como sendo a soma
 Faça um programa que leia um valor n inteiro e positivo e apresente o valor de H(n).
 """
 
+n = int(input('Informe um numero:'))
+soma = 0
+
+for i in range (1, n+1):
+    soma += 1/i
+
+print('A soma harmonica é:{:.2f}'.format(soma))

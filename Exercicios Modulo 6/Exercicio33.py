@@ -7,6 +7,21 @@ naturais que são multiplos de I ou de J e ou de ambos. Exemplo: Para N = 6, I =
 n = int(input('Informe um numero:'))
 i = 2
 j = 3
-y = 0
 x = 0
+y = 0 
 
+while x != n:
+    if y % i == 0:
+        print(y)
+        y += 1
+        x += 1
+    elif y % j == 0:
+        print(y)
+        y += 1
+        x += 1
+    elif y % i == 0 and y % j == 0:
+        print(y)
+        y += 1
+        x += 1
+    else:
+        y += 1

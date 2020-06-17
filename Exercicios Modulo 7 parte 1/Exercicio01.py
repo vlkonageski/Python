@@ -8,4 +8,17 @@ e mostre na tela a soma.
 (d)Mostre na tela cada valor do vetor A, um em cada linha.
 """
 
+# criando o vetor A
+a = [1, 0, 5, -2, -5, 7]
 
+# Soma entre os valores das posições A[0],A[1] e A[5] 
+soma = a[0] + a[1] + a[5]
+print('A soma entre os valores das posições A[0],A[1] e A[5] =', soma)
+
+#Modificando o vetor na posição 4, atribuindo a esta posição o valor 100.
+a.insert(4, 100)
+
+#Imprimindo cada valor do vetor A, um em cada linha.
+
+for x in a:
+    print(x)
